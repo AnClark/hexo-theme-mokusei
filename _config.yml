@@ -6,17 +6,19 @@ banner: /imgs/head.jpg
 rss: 
 
 # 导航栏
+# 菜单项为YAML标识符（例如：homepage, archive, about），
+# 需要你自行在多语言配置文件（位于languages子目录）中为各个菜单项添加翻译
 menu:
-  主页:
+  homepage:
     url: /
     icon: home
     iconType: fa
-  归档:
+  archives:
     url: /archives/
-  关于:
+  about:
     url: none
     child:
-        关于本站:
+        aboutThisWebsite:
           url: /about
 
 # 社交图标

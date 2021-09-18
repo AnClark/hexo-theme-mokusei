@@ -13,3 +13,11 @@ prev: 前へ
 next: 次
 page: ページ
 archive: アーカイブ
+
+# ナビゲーションバーの翻訳
+# 以下の内容はユーザーに指定されたナビゲーション項目の翻訳です。
+navBar:
+  homepage: ホームページ
+  archives: アーカイブ
+  about: このページについて
+  aboutThisWebsite: このページについて

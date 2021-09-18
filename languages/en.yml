@@ -13,3 +13,11 @@ prev: prev
 next: next
 page: page
 archive: Archive
+
+# Translation of the navigation bar.
+# Items are corresponding with user's own nav bar list in _config.yml.
+navBar:
+  homepage: Home
+  archives: Archives
+  about: About
+  aboutThisWebsite: About this website

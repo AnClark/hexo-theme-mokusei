@@ -13,3 +13,10 @@ prev: 上一页
 next: 下一页
 page: 页面
 archive: 归档
+
+# 导航栏部分的翻译，对应用户自己在_config.yml中添加的导航栏项目
+navBar:
+  homepage: 主页
+  archives: 归档
+  about: 关于
+  aboutThisWebsite: 关于本站
