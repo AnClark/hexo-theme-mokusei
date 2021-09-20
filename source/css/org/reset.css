@@ -9,7 +9,7 @@ li { list-style-type: none }
 a { text-decoration: none; outline: none}
 a:hover { text-decoration: none; }
 body { font-family: "Microsoft YaHei", sans-serif;}
-code,pre,input { font-family: "Microsoft YaHei", sans-serif; }
+code,pre,input { font-family: PT Mono, ui-monospace, SFMono-Regular, SF Mono,Menlo, Consolas, Liberation Mono, monospace; }
 
 .fl{ float: left; }
 .fr {float: right;}
