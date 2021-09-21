@@ -5,6 +5,10 @@ favicon:
 banner: /imgs/head.jpg
 rss: 
 
+# 是否延用站点配置文件的标题和描述，而不是主题里的设置
+useSiteName: true
+useSiteDescription: true
+
 # 导航栏
 # 菜单项为YAML标识符（例如：homepage, archive, about），
 # 需要你自行在多语言配置文件（位于languages子目录）中为各个菜单项添加翻译
