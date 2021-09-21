@@ -72,3 +72,15 @@ comment:
 
 # 粒子特效开关
 ifsparticle:  1
+
+# 多语言站点支持
+# 这要求你将不同语言独立为不同的站点，每个站点都是public下的二级子目录。默认语言直接使用网站根目录
+# 详细的配置过程见文档
+i18n:
+  languageList:
+    zh-cn:
+      name: 简体中文
+    en:
+      name: English
+  default: en
+  showSwitcher: true

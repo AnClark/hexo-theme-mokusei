@@ -1,5 +1,6 @@
 <div class="nav cl">
     <ul class="cl nav-list">
+        <!-- Customizable nav bar -->
         <% for (var i in theme.menu){ %>
             <li>
                 <% if(theme.menu[i].child){ %>
@@ -30,7 +31,37 @@
                 <% } %>
             </li>
         <% } %>
+
+        <!-- Language switcher -->
+        <% if (theme.i18n.showSwitcher && theme.i18n.languageList){ %>
+            <li>
+                <a href="javascript:void(0)">
+                    <i class="fa fa-language"></i> 
+                    <% if (config.root && theme.i18n.languageList[config.root.replace(/\//g, "")]){ %>
+                    <span><%= theme.i18n.languageList[config.root.replace(/\//g, "")].name %></span>
+                    <% } else if (config.root == "/" && theme.i18n.languageList[theme.i18n.default]) {%>
+                    <span><%= theme.i18n.languageList[theme.i18n.default].name %></span>
+                    <% } %>
+                    <span class="drop-flag fa fa-angle-down"></span>
+                </a>
+                <dl>
+                    <% for (var i in theme.i18n.languageList){ %>
+                        <li>
+                            <% if (i == theme.i18n.default){ %>
+                            <a href="/" class="">
+                            <% } else { %>
+                            <a href="<%- `/${i}/` %>" class="">
+                            <% } %>
+                                <i class="fa fa-circle"></i>
+                                <span><%= theme.i18n.languageList[i].name %></span>
+                            </a>
+                        </li>
+                    <% } %>
+                </dl>
+            </li>
+        <% } %>
     </ul>
+
     <ul class="cl nav-tool">
         <% for (var i in theme.account){ %>
             <li>
