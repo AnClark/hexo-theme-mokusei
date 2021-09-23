@@ -93,5 +93,4 @@ rm -f db.json
 hexo g --config   # 生成英文站点
 ```
 
-如果需要更改语言切换器在导航栏的位置，请自行修改导航栏的源代码（`layout/_partial/nav.ejs`）。
-
+要想在导航栏显示多语言切换器，还需在导航栏`menu`字段中添加子字段`_langSwitcher`或`_languageSwitcher`，详见主题`_config.yml`相应部分。

@@ -12,6 +12,9 @@ useSiteDescription: true
 # 导航栏
 # 菜单项为YAML标识符（例如：homepage, archive, about），
 # 需要你自行在多语言配置文件（位于languages子目录）中为各个菜单项添加翻译
+#
+# ** 特殊菜单项（直接添加字段，无需指定值与url等属性）： **
+# - _languageSwitcher, _langSwitcher: 多语言切换器
 menu:
   homepage:
     url: /
@@ -24,6 +27,7 @@ menu:
     child:
         aboutThisWebsite:
           url: /about
+  _languageSwitcher:    # 多语言切换器
 
 # 社交图标
 account:
@@ -80,6 +84,8 @@ ifsparticle:  1
 # 多语言站点支持
 # 这要求你将不同语言独立为不同的站点，每个站点都是public下的二级子目录。默认语言直接使用网站根目录
 # 详细的配置过程见文档
+#
+# 注：在导航栏（上方menu字段）中添加字段_languageSwitcher以显示导航栏
 i18n:
   languageList:
     zh-cn:
