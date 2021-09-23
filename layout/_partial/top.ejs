@@ -2,7 +2,7 @@
     <i class="fa fa-bars" id="media-toggle" style="display: none"></i>
     <div class="top-info cl fadeToBottom">
         <h2 class="site-name">
-            <a href="/">
+            <a href="<%- url_for('/') %>">
                 <% if (theme.useSiteName){ %>
                     <%=config.title%>
                 <% } else { %>
