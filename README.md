@@ -49,7 +49,7 @@ git pull origin master
 
 **第一步，修改站点配置文件**。你需要为每个语言使用各自的配置文件，并修改下面**单独列出**的字段，例如：
 
-- 默认语言（中文，`_config.yml`）：
+- 默认语言（中文，`_config.yml`，采用默认配置文件名）：
 ```yaml
 url: https://username.github.io/
 root: /           # 站点路径的根目录，可以不写此字段
@@ -62,7 +62,7 @@ source: source    # 中文版页面专属的源文件目录
 ```yaml
 # 这里参照了Hexo官方文档的提示
 url: https://username.github.io/en
-root: /en/        # 站点路径的根目录，设定为站点的目录
+root: /en/        # 站点路径的根目录，设定为站点在public文件夹中输出的目录（见下方）
 
 public: public/en # 站点输出目录
 source: source-en # 英文版页面专属的源文件目录
@@ -94,3 +94,19 @@ hexo g --config   # 生成英文站点
 ```
 
 要想在导航栏显示多语言切换器，还需在导航栏`menu`字段中添加子字段`_langSwitcher`或`_languageSwitcher`，详见主题`_config.yml`相应部分。
+
+**第四步，发布站点。**
+
+由于发布时，默认语言生成的站点文件夹会包含所有其他语言的站点，因此只在默认语言站点的`_config.yml`中保留`deploy`字段，其余站点配置文件的该字段统统置空：
+
+```yaml
+# 以下是置空的deploy字段
+deploy:
+  type: ''
+```
+
+然后发布站点：
+
+```bash
+hexo d
+```
