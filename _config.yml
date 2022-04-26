@@ -92,5 +92,5 @@ i18n:
       name: 简体中文
     en:
       name: English
-  default: en
+  default: zh-cn
   showSwitcher: true
